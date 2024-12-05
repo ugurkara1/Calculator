@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="235dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:layoutDirection="locale"
+        android:src="@drawable/kotlin" />
+
+    <TextView
+        android:id="@+id/uygulamaisim"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Hesap Makinesi Uğur Kara"
+
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="right"
+        android:hint="0"
+        android:text="0"
+        android:textSize="100dp"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/bir"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="1"
+                android:textSize="36dp"
+                android:layout_weight="1"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/iki"
+                android:onClick="sayisec"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="2"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/üc"
+                android:onClick="sayisec"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="3"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/carpi"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="islem"
+                android:text="*"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/dort"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="4"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/bes"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="5"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/alti"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="6"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/bolu"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="islem"
+                android:text="/"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/yedi"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="7"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/sekiz"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="8"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/dokuz"
+                android:onClick="sayisec"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:text="9"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/arti"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="islem"
+                android:text="+"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/ac"
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="ac"
+                android:text="AC"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/sifir"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="sayisec"
+                android:text="0"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/esit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="esittir"
+                android:text="="
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/eksi"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D91616"
+                android:backgroundTintMode="add"
+                android:onClick="islem"
+                android:text="-"
+                android:textSize="36dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#121212"
+                app:strokeWidth="2dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
